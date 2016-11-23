@@ -63,7 +63,27 @@ staging.usfoodcoop.org ansible_host=
 us-prod
 us-staging
 
+#------------------------------------------------------------------------------
+# France
 
+[fr-prod]
+www.openfoodfrance.org
+
+[fr-staging]
+www.staging.openfoodfrance.fr
+
+[fr:children]
+fr-prod
+fr-staging
+
+#------------------------------------------------------------------------------
+# Norway
+
+[no-prod]
+www.openfoodnetwork.no
+
+[no:children]
+no-prod
 
 #------------------------------------------------------------------------------
 # All
